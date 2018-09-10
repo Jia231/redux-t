@@ -1,0 +1,14 @@
+export enum ActionTypeStates {
+    INPROGRESS = "_INPROGRESS",
+    SUCCESS = "_SUCCESS",
+    FAIL = "_FAIL"
+}
+
+enum ActionTypeKeys {
+    GET_CUSTOMERS_INPROGRESS = 'GET_CUSTOMERS_INPROGRESS',
+    GET_CUSTOMERS_SUCCESS = "GET_CUSTOMERS_SUCCESS",
+    GET_CUSTOMERS_FAIL = "GET_CUSTOMERS_FAIL"
+}
+
+
+export default ActionTypeKeys;
