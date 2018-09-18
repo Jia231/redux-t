@@ -1,4 +1,10 @@
 export default interface IUser {
-    readonly name : string,
-    readonly age : number
+    id:number,
+    name:string,
+    age:number
 }
+
+export interface UserApiResponse{
+        readonly data : IUser[]
+}
+
