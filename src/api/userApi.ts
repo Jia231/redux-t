@@ -1,12 +1,12 @@
-import IUsers from '../models/IUsers';
+import {UserApiResponse} from '../models/IUser';
 import ApiError from './ApiError';
 
-export async function getUsers() : Promise<IUsers>{
-    const requestUrl = 'localhost:8080/users'
+export async function getUsers() : Promise<UserApiResponse>{
+    const requestUrl = 'http://localhost:8080/users'
     
     const response = await fetch(requestUrl);
 
-    if(response.ok){
+    if(response.ok){      
         return await response.json()
     }
     else{

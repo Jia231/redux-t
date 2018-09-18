@@ -1,13 +1,13 @@
 import {
-    IGetUsersInProgressAction,
+    IGetUsersFailAction,
     IGetUsersSuccessAction,
-    IGetUsersFailAction
-} from './customers/get/index';
+    IGetUsersInProgressAction
+} from './users/get';
 
-
-type ActionType = 
+type ActionTypes = 
 | IGetUsersFailAction
 | IGetUsersInProgressAction
 | IGetUsersSuccessAction
 
-export default ActionType;
+
+export default ActionTypes;
